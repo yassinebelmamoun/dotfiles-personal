@@ -10,6 +10,9 @@ export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
 # Source bash profile
 source ~/.bash_profile
 
+# Source bash profile
+source ~/.zprofile
+
 # make use of pyenv
 eval "$(pyenv init -)"
 
