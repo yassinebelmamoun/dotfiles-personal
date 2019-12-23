@@ -26,16 +26,10 @@ Plug 'PratikBhusal/vim-grip'
 " Syntax
 Plug 'sheerun/vim-polyglot'
 
-" JS / Vue
-" TODO : Remove in favor of ALE
-Plug 'posva/vim-vue'
-Plug 'pangloss/vim-javascript'
-
 " Git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/gv.vim'
-
 
 " Python plugins
 Plug 'tmhedberg/SimpylFold'
