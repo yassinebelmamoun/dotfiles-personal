@@ -27,6 +27,7 @@ Plug 'PratikBhusal/vim-grip'
 Plug 'sheerun/vim-polyglot'
 
 " JS / Vue
+" TODO : Remove in favor of ALE
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 
