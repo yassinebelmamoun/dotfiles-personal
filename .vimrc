@@ -17,11 +17,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'chrisbra/NrrwRgn'
-
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'shime/vim-livedown'
-Plug 'PratikBhusal/vim-grip'
 
 " Syntax
 Plug 'sheerun/vim-polyglot'
@@ -159,6 +155,12 @@ let g:sneak#s_next = 1
 
 " JamshedVesuna/vim-markdown-preview Plugin
 let vim_markdown_preview_hotkey='<c-m>'
+
+" ALE plugin
+let g:ale_fixers = {
+      \'javascript': ['prettier'],
+      \'css': ['prettier']
+\}
 
 " --- END PLUGINS
 
