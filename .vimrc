@@ -27,10 +27,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/gv.vim'
 
-" Python plugins
-Plug 'tmhedberg/SimpylFold'
-Plug 'klen/python-mode'
-
 " Other
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-surround'
@@ -38,6 +34,9 @@ Plug 'ajh17/VimCompletesMe'
 Plug 'scrooloose/nerdcommenter'
 Plug 'christoomey/vim-tmux-navigator'
 
+" Python plugins
+Plug 'tmhedberg/SimpylFold'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 " Must load last
 Plug 'ryanoasis/vim-devicons'
@@ -83,6 +82,8 @@ set incsearch
 set ignorecase
 set hlsearch
 
+" Folding
+let g:SimpylFold_docstring_preview=1
 
 
 " --- VISUAL
@@ -108,6 +109,9 @@ nnoremap <C-H> <C-W><C-H>
 noremap <S-l> gt
 noremap <S-h> gT
 
+" Folding
+nnoremap <space> za
+
 " Other
 nnoremap ; :
 
@@ -127,7 +131,7 @@ nnoremap  <Leader>n  :NERDTreeFind<CR>
 nnoremap <silent> <Leader>f :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1 " Show hidden files e.g. .vimrc
 let NERDTreeIgnore = ['\.swp$'] " Hide the temp .swp files created by vim
-let NERDTreeQuitOnOpen=1
+" let NERDTreeQuitOnOpen=1
 
 " Airline Plugin
 let g:airline_theme='luna'
@@ -142,9 +146,6 @@ let g:NERDToggleCheckAllLines = 1 " Enable NERDCommenterToggle to check all sele
 
 " Ale Plugin
 let g:airline#extensions#ale#enabled = 1 " Show  errors in statusline
-
-" Python-mode Plugin
-let g:pymode_python = 'python3'
 
 " Comfortable motion
 let g:comfortable_motion_scroll_down_key = "j"
@@ -166,3 +167,9 @@ let g:ale_fixers = {
 
 " --- Automated
 autocmd BufWritePre * :%s/\s\+$//e " Delete trailing whitespace on lines
+
+
+" python
+if has('python3')
+  silent! python3 1
+endif
