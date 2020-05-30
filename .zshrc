@@ -70,7 +70,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 #
 alias python=python3
 
-alias manatal="cd ~/Documents/manatal"
+alias repos="cd ~/Documents/repos"
+
 alias mrepos="cd ~/Documents/manatal/repos"
 alias mbackend="cd ~/Documents/manatal/repos/app-backend"
 alias mfrontend="cd ~/Documents/manatal/repos/client-frontend"
