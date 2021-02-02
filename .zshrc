@@ -40,9 +40,11 @@ plugins=(
   osx
   dotenv
   zsh-syntax-highlighting
+  zsh-autosuggestions
   vi-mode
   tmux
   history-substring-search
+  themes
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -71,10 +73,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias python=python3
 
 alias repos="cd ~/Documents/repos"
-
-alias mrepos="cd ~/Documents/manatal/repos"
-alias mbackend="cd ~/Documents/manatal/repos/app-backend"
-alias mfrontend="cd ~/Documents/manatal/repos/client-frontend"
+alias mrepos="cd ~/Documents/repos/manatal"
 
 #export LC_ALL=en_US.UTF-8
 #export LANG=en_US.UTF-8
